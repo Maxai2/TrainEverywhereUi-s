@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TrainEverywhere"
-             x:Class="TrainEverywhere.MainPage">
+             x:Class="TrainEverywhere.LoginPage">
 	<Grid>
 		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
 

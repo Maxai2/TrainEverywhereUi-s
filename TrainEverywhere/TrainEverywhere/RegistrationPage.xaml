@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainEverywhere.RegistrationPage">
+		<StackLayout Spacing="15" VerticalOptions="Center" Padding="50">
+
+		<Entry x:Name="name" Placeholder="Name" PlaceholderColor="LightGray" Keyboard="Text"/>
+		<Entry x:Name="surname" Placeholder="Surname" PlaceholderColor="LightGray" Keyboard="Text"/>
+		<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Text"/>
+		<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<Label Grid.Column="0" Text="Gender" VerticalOptions="Center"/>
+			<Picker Grid.Column="1">
+				<Picker.Items>
+					<x:String>"Male"</x:String>
+					<x:String>"Female"</x:String>
+				</Picker.Items>
+			</Picker>
+		</Grid>
+
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<Label Grid.Column="0" Text="Birthdate" VerticalOptions="Center"/>
+			<DatePicker Grid.Column="1"/>
+
+		</Grid>
+
+		<Button x:Name="lblForgotPas" Text="Forgot password?" HorizontalOptions="End" BackgroundColor="Transparent" FontSize="Micro" TextColor="Blue"/>
+
+		</StackLayout>
+</ContentPage>

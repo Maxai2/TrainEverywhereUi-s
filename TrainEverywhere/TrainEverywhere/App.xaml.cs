@@ -11,7 +11,7 @@ namespace TrainEverywhere
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new RegistrationPage();
         }
 
         protected override void OnStart()
