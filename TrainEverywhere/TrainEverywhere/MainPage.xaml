@@ -10,6 +10,7 @@
 			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
 
 			<Button x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="Coral"/>
+			
 			<Grid>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="*"/>
@@ -20,16 +21,13 @@
 				<Label Grid.Column="0" VerticalOptions="Center" HeightRequest="1" BackgroundColor="Gray"/>
 				<Label Grid.Column="1" VerticalOptions="Center" Text="OR" TextColor="Gray"/>
 				<Label Grid.Column="2" VerticalOptions="Center" HeightRequest="1" BackgroundColor="Gray"/>
-
 			</Grid>
 
-			<Button x:Name="SUButton" Text="Sign Up" TextColor="White" BackgroundColor="Coral"/>
+			<Button Text="Sign Up" TextColor="White" BackgroundColor="Coral"/>
+
+			<Button x:Name="lblForgotPas" Text="Forgot password?" HorizontalOptions="Center" BackgroundColor="Transparent" FontSize="Micro" Clicked="lblForgotPas_Clicked" TextColor="Blue"/>
 
 		</StackLayout>
-		<!--<Grid IsVisible="False" x:Name="blackScreen">
-			<Label HorizontalOptions="Fill" VerticalOptions="Fill" Opacity="0.5" BackgroundColor="DarkGray" x:Name="BlackScreen"/>
-			<ActivityIndicator x:Name="IndiLoad" VerticalOptions="Center" HorizontalOptions="Center" IsRunning="True" Color="Blue"/>
-		</Grid>-->
 	</Grid>
 
 </ContentPage>

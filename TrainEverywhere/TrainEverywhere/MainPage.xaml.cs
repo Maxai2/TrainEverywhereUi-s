@@ -13,5 +13,10 @@ namespace TrainEverywhere
         {
             InitializeComponent();
         }
+
+        private void lblForgotPas_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Test", "Forgot password", "Ok");
+        }
     }
 }
