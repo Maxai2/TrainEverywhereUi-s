@@ -9,7 +9,7 @@
 			<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email"/>
 			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
 
-			<Button x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="Coral"/>
+			<Button Margin="0,50,0,0" x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="Coral"/>
 			
 			<Grid>
 				<Grid.ColumnDefinitions>

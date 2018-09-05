@@ -15,7 +15,8 @@
 			</Grid.ColumnDefinitions>
 
 			<Label Grid.Column="0" Text="Gender" VerticalOptions="Center"/>
-			<Picker Grid.Column="1">
+			
+			<Picker Grid.Column="1" WidthRequest="10">
 				<Picker.Items>
 					<x:String>"Male"</x:String>
 					<x:String>"Female"</x:String>
@@ -34,7 +35,7 @@
 
 		</Grid>
 
-		<Button x:Name="lblForgotPas" Text="Forgot password?" HorizontalOptions="End" BackgroundColor="Transparent" FontSize="Micro" TextColor="Blue"/>
+		<Button Margin="0,20,0,0" Text="Registration" TextColor="White" BackgroundColor="Coral"/>
 
-		</StackLayout>
+	</StackLayout>
 </ContentPage>
