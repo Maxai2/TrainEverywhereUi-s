@@ -18,8 +18,8 @@
 			
 			<Picker Grid.Column="1" WidthRequest="10">
 				<Picker.Items>
-					<x:String>"Male"</x:String>
-					<x:String>"Female"</x:String>
+					<x:String>Male</x:String>
+					<x:String>Female</x:String>
 				</Picker.Items>
 			</Picker>
 		</Grid>
