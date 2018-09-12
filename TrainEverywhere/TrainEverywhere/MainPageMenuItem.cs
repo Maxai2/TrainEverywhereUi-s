@@ -9,10 +9,6 @@ namespace TrainEverywhere
 
     public class MainPageMenuItem
     {
-        public MainPageMenuItem()
-        {
-            TargetType = typeof(MainPageDetail);
-        }
         public int Id { get; set; }
         public string Title { get; set; }
 

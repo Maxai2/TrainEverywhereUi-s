@@ -8,7 +8,7 @@
 
 			<ListView.Header>
 				<Grid BackgroundColor="Green">
-					<Label HeightRequest="20"/>
+					<Label HeightRequest="50"/>
 				</Grid>
 			</ListView.Header>
 
