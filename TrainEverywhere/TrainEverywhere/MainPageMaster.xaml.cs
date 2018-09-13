@@ -33,8 +33,8 @@ namespace TrainEverywhere
             {
                 MenuItems = new ObservableCollection<MainPageMenuItem>(new[]
                 {
-                    new MainPageMenuItem { Id = 0, Title = "News page", TargetType=typeof(NewsPage) },
-                    new MainPageMenuItem { Id = 1, Title = "Beginners"}
+                    new MainPageMenuItem { Id = 0, Title = "News page", TargetType = typeof(NewsPage)},
+                    new MainPageMenuItem { Id = 1, Title = "My profile", TargetType = typeof(MyProfilePage)}
                 });
             }
             
