@@ -15,7 +15,7 @@ namespace TrainEverywhere
 		public MyProfilePage ()
 		{
 			InitializeComponent ();
-            BindingContext = this;
+            //BindingContext = this;
         }
 	}
 }

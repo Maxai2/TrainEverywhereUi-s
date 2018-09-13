@@ -23,6 +23,8 @@ namespace TrainEverywhere
 
             BindingContext = new MainPageMasterViewModel();
             ListView = MenuItemsListView;
+
+             
         }
 
         class MainPageMasterViewModel : INotifyPropertyChanged
