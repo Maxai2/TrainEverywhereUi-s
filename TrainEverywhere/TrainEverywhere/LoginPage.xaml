@@ -6,7 +6,7 @@
 	<Grid>
 		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
 
-			<Label Text="TRAIN EVERYWHERE" HorizontalOptions="Center" FontSize="Large" Margin="0,0,0,20"/>
+			<Label Text="TRAIN EVERYWHERE" HorizontalOptions="Center" FontSize="Large" Margin="0,0,0,20" FontAttributes="Bold"/>
 
 			<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email"/>
 			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>

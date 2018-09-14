@@ -6,8 +6,10 @@
 
 		<Entry x:Name="name" Placeholder="Name" PlaceholderColor="LightGray" Keyboard="Text"/>
 		<Entry x:Name="surname" Placeholder="Surname" PlaceholderColor="LightGray" Keyboard="Text"/>
-		<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Text"/>
+		<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email"/>
 		<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
+		<Entry x:Name="confirmPassword" Placeholder="Confirm password" PlaceholderColor="LightGray" IsPassword="true"/>
+			
 		<Grid>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="Auto"/>
@@ -16,7 +18,7 @@
 
 			<Label Grid.Column="0" Text="Gender" VerticalOptions="Center"/>
 			
-			<Picker Grid.Column="1" WidthRequest="10">
+			<Picker Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro" WidthRequest="20">
 				<Picker.Items>
 					<x:String>Male</x:String>
 					<x:String>Female</x:String>
@@ -31,7 +33,7 @@
 			</Grid.ColumnDefinitions>
 
 			<Label Grid.Column="0" Text="Birthdate" VerticalOptions="Center"/>
-			<DatePicker Grid.Column="1"/>
+			<DatePicker Grid.Column="1" FontSize="Micro"/>
 
 		</Grid>
 
