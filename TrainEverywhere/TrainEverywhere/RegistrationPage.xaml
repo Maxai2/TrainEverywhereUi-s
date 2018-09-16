@@ -18,7 +18,7 @@
 
 			<Label Grid.Column="0" Text="Gender" VerticalOptions="Center"/>
 			
-			<Picker Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro" WidthRequest="20">
+			<Picker Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro" WidthRequest="50">
 				<Picker.Items>
 					<x:String>Male</x:String>
 					<x:String>Female</x:String>
@@ -37,7 +37,7 @@
 
 		</Grid>
 
-		<Button Margin="0,20,0,0" Text="Registration" TextColor="White" BackgroundColor="Coral"/>
+		<Button Margin="0,20,0,0" Text="Next" TextColor="White" BackgroundColor="Coral" HorizontalOptions="EndAndExpand"/>
 
 	</StackLayout>
 </ContentPage>
