@@ -18,7 +18,7 @@
 
 			<Label Grid.Column="0" Text="Gender" VerticalOptions="Center"/>
 			
-			<Picker Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro" WidthRequest="50">
+			<Picker Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Margin="10,0,0,0" FontSize="Micro" WidthRequest="50" >
 				<Picker.Items>
 					<x:String>Male</x:String>
 					<x:String>Female</x:String>
