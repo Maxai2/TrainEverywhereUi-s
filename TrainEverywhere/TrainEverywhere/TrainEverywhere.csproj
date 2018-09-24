@@ -15,6 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="SlideoutView.FormsPlugin.Abstractions">
+      <HintPath>..\..\SlideoutView.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -54,6 +60,9 @@
     <None Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="ExercisesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
@@ -66,10 +75,16 @@
     <None Update="MyProfilePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="MyProgramPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="NewsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="RegistrationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="RegistrationPageNext.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
   </ItemGroup>

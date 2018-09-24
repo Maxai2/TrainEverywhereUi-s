@@ -1,16 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+													xmlns:slider="clr-namespace:SlideoutView.FormsPlugin.Abstractions;assembly=SlideoutView.FormsPlugin.Abstractions"
              x:Class="TrainEverywhere.MyProgramPage">
-	<ContentPage.Content>
-		<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>
-	</ContentPage.Content>
+
+	<Grid>
+
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		
+			<StackLayout Orientation="Horizontal" Grid.Row="0">
+
+				<Label Text="Weekday: "/>
+
+				<Picker HorizontalOptions="Center" VerticalOptions="Center" Margin="10,0,0,0" FontSize="Micro" WidthRequest="100" >
+					<Picker.Items>
+						<x:String>Monday</x:String>
+						<x:String>Tuesday</x:String>
+						<x:String>Wednesday</x:String>
+						<x:String>Thursday</x:String>
+						<x:String>Friday</x:String>
+						<x:String>Saturday</x:String>
+						<x:String>Sunday</x:String>
+					</Picker.Items>
+				</Picker>
+
+			</StackLayout>
+
+			<Label Text="415646515161" BackgroundColor="Yellow" Grid.Row="1"/>
+
+			<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Bottom" BackgroundColor="Red" Grid.Row="2">
+				<slider:SlideoutControl.Content>
+					<StackLayout Padding="10" BackgroundColor="#77000000">
+						<Label Text="Hello" LineBreakMode="NoWrap" TextColor="White" />
+						<Label Text="World" LineBreakMode="NoWrap" TextColor="White" />
+					</StackLayout>
+				</slider:SlideoutControl.Content>
+			</slider:SlideoutControl>
+
+
+			<!--<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>-->
+			
+	</Grid>
 </ContentPage>
