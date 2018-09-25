@@ -10,14 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace TrainEverywhere
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MyProgramPage : ContentPage
+	public partial class ExercisesDetailPage : ContentPage
 	{
-
-        public MyProgramPage ()
+		public ExercisesDetailPage ()
 		{
 			InitializeComponent ();
-
-            this.BindingContext = new SlideControlVM();
-        }
-    }
+		}
+	}
 }

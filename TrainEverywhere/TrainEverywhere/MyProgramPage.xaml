@@ -24,13 +24,22 @@
 
 		</StackLayout>
 
+		<!--<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>-->
+
 		<Button Command="{Binding ToggleSlidoutViewCommand}" Text="Pro"/>
 
 		<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Top">
 			<slider:SlideoutControl.Content>
 				<StackLayout >
 					<Label Text="Hello" LineBreakMode="NoWrap" TextColor="Green"/>
-					<Label Text="World" LineBreakMode="NoWrap" TextColor="Green"/>
+					<Label Text="World1" LineBreakMode="NoWrap" TextColor="Green"/>
 				</StackLayout>
 			</slider:SlideoutControl.Content>
 		</slider:SlideoutControl>
@@ -41,21 +50,23 @@
 			<slider:SlideoutControl.Content>
 				<StackLayout>
 					<Label Text="Hello" LineBreakMode="NoWrap" TextColor="Green"/>
-					<Label Text="World" LineBreakMode="NoWrap" TextColor="Green"/>
+					<Label Text="World2" LineBreakMode="NoWrap" TextColor="Green"/>
+				</StackLayout>
+			</slider:SlideoutControl.Content>
+		</slider:SlideoutControl>
+
+		<Button Command="{Binding ToggleSlidoutViewCommand}" Text="Pro3"/>
+
+		<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Top">
+			<slider:SlideoutControl.Content>
+				<StackLayout>
+					<Label Text="Hello" LineBreakMode="NoWrap" TextColor="Green"/>
+					<Label Text="World3" LineBreakMode="NoWrap" TextColor="Green"/>
 				</StackLayout>
 			</slider:SlideoutControl.Content>
 		</slider:SlideoutControl>
 
 	</StackLayout>
 
-
-	<!--<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>-->
 
 </ContentPage>
