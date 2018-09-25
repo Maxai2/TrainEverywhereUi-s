@@ -4,45 +4,52 @@
 													xmlns:slider="clr-namespace:SlideoutView.FormsPlugin.Abstractions;assembly=SlideoutView.FormsPlugin.Abstractions"
              x:Class="TrainEverywhere.MyProgramPage">
 
-	<Grid>
+	<StackLayout>
 
-		<Grid.RowDefinitions>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-		</Grid.RowDefinitions>
-		
-			<StackLayout Orientation="Horizontal" Grid.Row="0">
+		<StackLayout Orientation="Horizontal" >
 
-				<Label Text="Weekday: "/>
+			<Label Text="Weekday:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
 
-				<Picker HorizontalOptions="Center" VerticalOptions="Center" Margin="10,0,0,0" FontSize="Micro" WidthRequest="100" >
-					<Picker.Items>
-						<x:String>Monday</x:String>
-						<x:String>Tuesday</x:String>
-						<x:String>Wednesday</x:String>
-						<x:String>Thursday</x:String>
-						<x:String>Friday</x:String>
-						<x:String>Saturday</x:String>
-						<x:String>Sunday</x:String>
-					</Picker.Items>
-				</Picker>
+			<Picker HorizontalOptions="Center" VerticalOptions="Center" Margin="10,0,0,0" FontSize="Medium" WidthRequest="100" >
+				<Picker.Items>
+					<x:String>Monday</x:String>
+					<x:String>Tuesday</x:String>
+					<x:String>Wednesday</x:String>
+					<x:String>Thursday</x:String>
+					<x:String>Friday</x:String>
+					<x:String>Saturday</x:String>
+					<x:String>Sunday</x:String>
+				</Picker.Items>
+			</Picker>
 
-			</StackLayout>
+		</StackLayout>
 
-			<Label Text="415646515161" BackgroundColor="Yellow" Grid.Row="1"/>
+		<Button Command="{Binding ToggleSlidoutViewCommand}" Text="Pro"/>
 
-			<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Bottom" BackgroundColor="Red" Grid.Row="2">
-				<slider:SlideoutControl.Content>
-					<StackLayout Padding="10" BackgroundColor="#77000000">
-						<Label Text="Hello" LineBreakMode="NoWrap" TextColor="White" />
-						<Label Text="World" LineBreakMode="NoWrap" TextColor="White" />
-					</StackLayout>
-				</slider:SlideoutControl.Content>
-			</slider:SlideoutControl>
+		<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Top">
+			<slider:SlideoutControl.Content>
+				<StackLayout >
+					<Label Text="Hello" LineBreakMode="NoWrap" TextColor="Green"/>
+					<Label Text="World" LineBreakMode="NoWrap" TextColor="Green"/>
+				</StackLayout>
+			</slider:SlideoutControl.Content>
+		</slider:SlideoutControl>
+
+		<Button Command="{Binding ToggleSlidoutViewCommand}" Text="Pro2"/>
+
+		<slider:SlideoutControl IsPresented="{Binding IsPresented}" SlideOutDirection="Top">
+			<slider:SlideoutControl.Content>
+				<StackLayout>
+					<Label Text="Hello" LineBreakMode="NoWrap" TextColor="Green"/>
+					<Label Text="World" LineBreakMode="NoWrap" TextColor="Green"/>
+				</StackLayout>
+			</slider:SlideoutControl.Content>
+		</slider:SlideoutControl>
+
+	</StackLayout>
 
 
-			<!--<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
+	<!--<ListView ItemsSource="{Binding Programs}" HasUnevenRows="True">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
@@ -50,6 +57,5 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>-->
-			
-	</Grid>
+
 </ContentPage>

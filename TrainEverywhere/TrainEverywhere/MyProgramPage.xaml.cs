@@ -15,6 +15,8 @@ namespace TrainEverywhere
 		public MyProgramPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+            this.BindingContext = new SlideControlVM();
+        }
+    }
 }
