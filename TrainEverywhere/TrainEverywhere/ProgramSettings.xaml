@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainEverywhere.ProgramSettings">
+	<ContentPage.Content>
+		<Grid>
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="auto"/>
+				<RowDefinition Height="auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<Label Text="Weekday:" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" Grid.Row="0"/>
+
+			<Picker HorizontalOptions="Center" VerticalOptions="Start" Margin="10,0,0,0" FontSize="Medium" WidthRequest="100" Grid.Row="1">
+				<Picker.Items>
+					<x:String>Monday</x:String>
+					<x:String>Tuesday</x:String>
+					<x:String>Wednesday</x:String>
+					<x:String>Thursday</x:String>
+					<x:String>Friday</x:String>
+					<x:String>Saturday</x:String>
+					<x:String>Sunday</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<ListView Margin="5" ItemsSource="{Binding Mock}" Grid.Row="2" HasUnevenRows="True" BackgroundColor="SlateGray">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Frame OutlineColor="Black" Margin="5" Padding="1,8" VerticalOptions="End">
+								<Grid Margin="5"  HorizontalOptions="Start">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="auto"/>
+										<ColumnDefinition/>
+										<ColumnDefinition Width="80"/>
+										<ColumnDefinition Width="80"/>
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="auto"/>
+									</Grid.RowDefinitions>
+									<Label Grid.Column="0" Text="{Binding Description}" FontSize="14" VerticalOptions="Center" LineBreakMode="WordWrap" />
+									<Label Grid.Column="1" Text="{Binding Title}" FontSize="14" VerticalOptions="Center" LineBreakMode="WordWrap" />
+									<Button Grid.Column="2" Text="Edit" HorizontalOptions="End" HeightRequest="50" VerticalOptions="Center"/>
+									<Button Grid.Column="3" Text="Delete" HorizontalOptions="End" HeightRequest="50" VerticalOptions="Center"/>
+								</Grid>
+							</Frame>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

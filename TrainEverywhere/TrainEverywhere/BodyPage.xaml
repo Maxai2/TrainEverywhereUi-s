@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainEverywhere.BodyPage" Title="Body parameters">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" VerticalOptions="Center" Padding="50">
+            <Entry Placeholder="Height" Keyboard="Numeric" Text="{Binding UserBodyHeight}"/>
+            <Entry Placeholder="Weight" Keyboard="Numeric" Text="{Binding UserBodyWeight}"/>
+            <Entry Placeholder="Chest" Keyboard="Numeric" Text="{Binding UserBodyChest}"/>
+            <Entry Placeholder="Arms" Keyboard="Numeric" Text="{Binding UserBodyArms}"/>
+            <Entry Placeholder="Shoulders" Keyboard="Numeric" Text="{Binding UserBodyShoulders}"/>
+            <Entry Placeholder="Waist" Keyboard="Numeric" Text="{Binding UserBodyWaist}"/>
+            <Entry Placeholder="Calves" Keyboard="Numeric" Text="{Binding UserBodyCalves}"/>
+            <Entry Placeholder="Quads" Keyboard="Numeric" Text="{Binding UserBodyQuads}"/>
+
+            <Button Margin="0,20,0,0" HorizontalOptions="Center" Command="{Binding EditBody}" Text="Edit" HeightRequest="40" WidthRequest="150"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

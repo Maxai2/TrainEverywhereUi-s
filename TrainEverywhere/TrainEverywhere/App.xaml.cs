@@ -11,7 +11,13 @@ namespace TrainEverywhere
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var tabbedPage = new TabbedPage();
+
+            tabbedPage.Children.Add(new ProfilePage());
+            tabbedPage.Children.Add(new BodyPage());
+            tabbedPage.Children.Add(new PicturesPage());
+
+            MainPage = new MainPage(); ;
         }
 
         protected override void OnStart()
