@@ -5,15 +5,19 @@
 	<ContentPage.Content>
 		<Grid>
 			<Grid.RowDefinitions>
-
+				<RowDefinition/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-
+				<ColumnDefinition/>
 			</Grid.ColumnDefinitions>
-			
-			
-			
-			
+
+
+			<!--<Image Source="https://img.clipartxtras.com/9d14a0060de63a50a89bbe8103f85855_drawn-mussel-body-drawing-pencil-and-in-color-drawn-mussel-body-human-body-muscle-drawing_1000-752.jpeg" HeightRequest="200"/>-->
+
+			<Image Source="depositphotos_29671425-stock-photo-muscle-man-standing.jpg"/>
+
+			<!--https://i.ebayimg.com/images/i/321733013718-0-1/s-l1000.jpg-->
+
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>
