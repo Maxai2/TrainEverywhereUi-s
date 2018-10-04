@@ -34,7 +34,7 @@ namespace TrainEverywhere
                 MenuItems = new ObservableCollection<MainPageMenuItem>(new[]
                 {
                         new MainPageMenuItem { Id = 0, Title = "News page", TargetType = typeof(NewsPage)},
-                        new MainPageMenuItem { Id = 1, Title = "Exercises", TargetType = typeof(ExercisesPage)},
+                        new MainPageMenuItem { Id = 1, Title = "Exercises", TargetType = typeof(ExercisesWikiPage)},
                         new MainPageMenuItem { Id = 2, Title = "My programs", TargetType = typeof(MyProgramPage) },
                         new MainPageMenuItem { Id = 3, Title = "Basic", TargetType = typeof(NewsPage)}
 

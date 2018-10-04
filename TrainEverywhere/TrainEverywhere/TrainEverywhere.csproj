@@ -21,19 +21,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ExercisesWikiPage.xaml.cs">
+      <DependentUpon>ExercisesWikiPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="MainPageMenuItem.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Picturespage.xaml.cs">
+      <DependentUpon>PicturesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="ExercisesDetailPage.xaml">
+    <EmbeddedResource Update="BodyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ExercisesPage.xaml">
+    <EmbeddedResource Update="ExercisesWikiPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MainPage.xaml">
@@ -42,7 +51,10 @@
     <EmbeddedResource Update="MainPageMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MyProfilePage.xaml">
+    <EmbeddedResource Update="PicturesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ProfilePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MyProgramPage.xaml">

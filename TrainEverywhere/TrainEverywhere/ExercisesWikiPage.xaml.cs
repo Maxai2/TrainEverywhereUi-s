@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TrainEverywhere
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ExercisesPage : ContentPage
+	public partial class ExercisesWikiPage : ContentPage
 	{
-		public ExercisesPage ()
+		public ExercisesWikiPage()
 		{
 			InitializeComponent ();
 		}

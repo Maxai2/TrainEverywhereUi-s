@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace TrainEverywhere
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MyProfilePage : ContentPage
+	public partial class PicturesPage : ContentPage
 	{
-		public MyProfilePage ()
+		public PicturesPage ()
 		{
 			InitializeComponent ();
-            //BindingContext = this;
-        }
+		}
 	}
 }
