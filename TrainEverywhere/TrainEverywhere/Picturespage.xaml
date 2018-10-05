@@ -5,20 +5,37 @@
              xmlns:local="clr-namespace:TrainEverywhere"
              xmlns:xf="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.WrapLayout"
              x:Class="TrainEverywhere.PicturesPage" Title="Pictures">
-    <ContentPage.Content>
-        <ScrollView Orientation="Vertical" >
-            <xf:WrapLayout Orientation="Horizontal">
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                <Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
-                
-                <Button Text="+" WidthRequest="60" HeightRequest="60" BorderRadius="20"/>
-            </xf:WrapLayout>
+	<ContentPage.Content>
 
-        </ScrollView>
-    </ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			
+			<ScrollView Orientation="Vertical" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+				<xf:WrapLayout Orientation="Horizontal">
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3"/>
+
+				</xf:WrapLayout>
+
+			</ScrollView>
+			
+			<Button Text="+" WidthRequest="40" HeightRequest="40" BorderRadius="10" Grid.Row="1" />
+
+		</Grid>
+
+
+	</ContentPage.Content>
 </ContentPage>

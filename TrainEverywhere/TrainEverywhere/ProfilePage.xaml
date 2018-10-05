@@ -1,58 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+													xmlns:ci="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="TrainEverywhere.ProfilePage" Title="Profile">
 	<ContentPage.Content>
-		<Grid>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition/>
-				<ColumnDefinition/>
-			</Grid.ColumnDefinitions>
+		<StackLayout VerticalOptions="Center">
 
-			<Grid.RowDefinitions>
-				<RowDefinition/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition/>
-			</Grid.RowDefinitions>
-
-			<Frame Grid.Column="0" Grid.Row="0" BorderColor="Black" CornerRadius="5" Margin="5" HeightRequest="150">
-				<Image Source="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg"/>
-			</Frame>
-
-			<Grid Grid.Column="1" Grid.Row="0">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="2*"/>
 					<RowDefinition/>
 					<RowDefinition/>
 					<RowDefinition/>
-					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 
-				<Label Grid.Row="0" Text="Name" FontSize="Large"/>
-				<Label Grid.Row="1" Text="Surname" FontSize="Large"/>
-				<DatePicker Grid.Row="2" FontSize="Medium" IsEnabled="False" />
-				
-				<Button Grid.Row="4" BackgroundColor="Transparent" Text="Parameters"/>
+				<ci:CircleImage Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2" BorderThickness="1" BorderColor="Gray"
+                            Source="https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg" Aspect="AspectFill"/>
+
+				<Entry Margin="5" Placeholder="Email" Text="{Binding UserEmail}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+				<DatePicker Margin="5" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Date="{Binding UserBirthday}"/>
+
+				<Entry Margin="5" Placeholder="Name" Text="{Binding UserName}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Surname" Text="{Binding UserSurname}" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+				<Entry Margin="5" Placeholder="Password" Text="{Binding UserPassword}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Confirm Password" Text="{Binding UserConfirmPassword}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+				<Button Margin="0,20,0,0" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" HorizontalOptions="Center" Command="{Binding EditProfile}" Text="Edit" HeightRequest="40" WidthRequest="150"/>
+
 			</Grid>
-
-			<Button Grid.ColumnSpan="2" Grid.Row="1" Text="Edit Profile" Margin="5" VerticalOptions="Center" HorizontalOptions="Center"/>
-
-			<Grid Grid.ColumnSpan="2" Grid.Row="2">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition/>
-				</Grid.ColumnDefinitions>
-
-				<Button Grid.Column="0" Margin="10" WidthRequest="60" Text="+"/>
-
-				<ScrollView Grid.Column="1" >
-					<StackLayout Orientation="Horizontal">
-					
-				</StackLayout>
-			</ScrollView>
-				
-			</Grid>
-			
-		</Grid>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

@@ -7,6 +7,9 @@ namespace TrainEverywhere
 {
     public partial class App : Application
     {
+        public static int ScreenWidth;
+        public static int ScreenHeight;
+
         public App()
         {
             InitializeComponent();
@@ -17,7 +20,7 @@ namespace TrainEverywhere
             tabbedPage.Children.Add(new BodyPage());
             tabbedPage.Children.Add(new PicturesPage());
 
-            MainPage = new MainPage(); ;
+            MainPage = tabbedPage;
         }
 
         protected override void OnStart()

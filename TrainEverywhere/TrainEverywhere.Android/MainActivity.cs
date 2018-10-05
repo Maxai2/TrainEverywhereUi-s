@@ -22,6 +22,9 @@ namespace TrainEverywhere.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             ImageCircleRenderer.Init();
             LoadApplication(new App());
+
+            App.ScreenWidth = (int)Resources.DisplayMetrics.WidthPixels;
+            App.ScreenHeight = (int)Resources.DisplayMetrics.HeightPixels;
         }
     }
 }
