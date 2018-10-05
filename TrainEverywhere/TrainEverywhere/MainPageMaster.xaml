@@ -20,9 +20,14 @@
 						<RowDefinition Height="Auto"/>
 						<RowDefinition Height="Auto"/>
 					</Grid.RowDefinitions>
-					
-					<ci:CircleImage Grid.RowSpan="2" Grid.Column="0" HeightRequest="100" WidthRequest="100" Source="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg"
-                                    Aspect="AspectFill"/>
+
+					<Frame Grid.RowSpan="2" Grid.Column="0" BackgroundColor="Transparent" HeightRequest="100" WidthRequest="100">
+						<Frame.GestureRecognizers>
+							<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+						</Frame.GestureRecognizers>
+
+						<ci:CircleImage Source="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg" Aspect="AspectFill"/>
+					</Frame>
 
 					<Label Margin="5" Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large"/>
 				</Grid>
@@ -39,7 +44,7 @@
 			</ListView.ItemTemplate>
 
 		</ListView>
-		
+
 	</StackLayout>
 </ContentPage>
 

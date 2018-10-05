@@ -10,11 +10,12 @@ namespace TrainEverywhere
         public static int ScreenWidth;
         public static int ScreenHeight;
 
+        public static TabbedPage tabbedPage = new TabbedPage();
+
         public App()
         {
             InitializeComponent();
 
-            var tabbedPage = new TabbedPage();
 
             tabbedPage.Children.Add(new ProfilePage());
             tabbedPage.Children.Add(new BodyPage());
