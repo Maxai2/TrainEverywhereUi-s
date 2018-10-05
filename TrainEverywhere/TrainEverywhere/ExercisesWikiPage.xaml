@@ -5,8 +5,7 @@
              x:Class="TrainEverywhere.ExercisesWikiPage">
 	<ContentPage.Content>
 		<Grid>
-			<Label Text="awdawd"/>
-			<Image Source="omg.jpg"/>
+			<Image Source="https://i.pinimg.com/originals/85/c0/fa/85c0fa1536c888e393a5b38c297c66ec.jpg"/>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

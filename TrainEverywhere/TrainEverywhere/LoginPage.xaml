@@ -25,7 +25,7 @@
 				<Label Grid.Column="2" VerticalOptions="Center" HeightRequest="1" BackgroundColor="Gray"/>
 			</Grid>
 
-			<Button Text="Sign Up" TextColor="White"/>
+			<Button Text="Sign Up" TextColor="White" Command="{Binding SignUpCom}"/>
 
 			<Button x:Name="lblForgotPas" Text="Forgot password?" HorizontalOptions="Center" BackgroundColor="Transparent" FontSize="Micro" Clicked="lblForgotPas_Clicked" TextColor="Blue"/>
 

@@ -37,7 +37,7 @@
 
 		</Grid>
 
-		<Button Margin="0,20,0,0" Text="Next" TextColor="White" BackgroundColor="Coral" HorizontalOptions="EndAndExpand"/>
+		<Button Margin="0,20,0,0" Text="Next" TextColor="White" BackgroundColor="Coral" HorizontalOptions="EndAndExpand" Command="{Binding RegistrationNext}"/>
 
 	</StackLayout>
 </ContentPage>

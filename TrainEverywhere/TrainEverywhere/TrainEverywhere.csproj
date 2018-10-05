@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.0.0" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="3.2.0.871581" />
   </ItemGroup>
@@ -29,6 +30,11 @@
   <ItemGroup>
     <Compile Update="ExercisesWikiPage.xaml.cs">
       <DependentUpon>ExercisesWikiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="GymDb.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GymDB.xsd</DependentUpon>
     </Compile>
     <Compile Update="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -95,6 +101,10 @@
     </None>
     <None Update="ExercisesWikiPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="GymDb.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDB.Designer.cs</LastGenOutput>
     </None>
     <None Update="LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
