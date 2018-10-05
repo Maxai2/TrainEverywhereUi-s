@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainEverywhere.ProgramBuildPage">
+	<ContentPage.Content>
+		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
+			<Picker FontSize="Medium" HorizontalOptions="Center" WidthRequest="100">
+				<Picker.Items>
+					<x:String>Monday</x:String>
+					<x:String>Tuesday</x:String>
+					<x:String>Wednesday</x:String>
+					<x:String>Thursday</x:String>
+					<x:String>Friday</x:String>
+					<x:String>Saturday</x:String>
+					<x:String>Sunday</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Picker FontSize="Medium" HorizontalOptions="Center" WidthRequest="200">
+				<Picker.Items>
+					<x:String>Monday</x:String>
+					<x:String>Tuesday</x:String>
+					<x:String>Wednesday</x:String>
+					<x:String>Thursday</x:String>
+					<x:String>Friday</x:String>
+					<x:String>Saturday</x:String>
+					<x:String>Sunday</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Frame BorderColor="Black" CornerRadius="5" Margin="5">
+				<ListView ItemsSource="{Binding shedule}" HasUnevenRows="True">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<Frame BorderColor="Gray" Margin="1" HeightRequest="19">
+									<StackLayout Orientation="Horizontal">
+										<!--<Grid.ColumnDefinitions>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>-->
+
+										<Entry Grid.Column="0" Keyboard="Numeric" VerticalOptions="Center" HorizontalOptions="Center"/>
+										<Label Grid.Column="1" Text="count"/>
+										<Entry Grid.Column="2" Keyboard="Numeric"/>
+										<Label Grid.Column="3" Text="kg"/>
+										<TimePicker Grid.Column="4" WidthRequest="100" FontSize="Micro"/>
+
+									</StackLayout>
+								</Frame>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</Frame>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

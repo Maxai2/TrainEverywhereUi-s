@@ -9,6 +9,7 @@
 				<RowDefinition Height="auto"/>
 				<RowDefinition Height="auto"/>
 				<RowDefinition Height="*"/>
+				<RowDefinition Height="auto"/>
 			</Grid.RowDefinitions>
 
 			<Label Text="Weekday:" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" Grid.Row="0"/>
@@ -51,6 +52,8 @@
 				</ListView.ItemTemplate>
 			</ListView>
 
+			<Button Text="+"  WidthRequest="40" HeightRequest="40" BorderRadius="20" Grid.Row="3" Margin="10" HorizontalOptions="Center"/>
+			
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

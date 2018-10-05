@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainEverywhere.GoExercisesBegin">
+	<ContentPage.Content>
+		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
+			<Picker FontSize="Medium" HorizontalOptions="Center" WidthRequest="200">
+				<Picker.Items>
+					<x:String>Monday</x:String>
+					<x:String>Tuesday</x:String>
+					<x:String>Wednesday</x:String>
+					<x:String>Thursday</x:String>
+					<x:String>Friday</x:String>
+					<x:String>Saturday</x:String>
+					<x:String>Sunday</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Frame>
+				<ListView>
+					
+				</ListView>
+			</Frame>
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

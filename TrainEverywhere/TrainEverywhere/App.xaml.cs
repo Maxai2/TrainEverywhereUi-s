@@ -20,7 +20,7 @@ namespace TrainEverywhere
             tabbedPage.Children.Add(new BodyPage());
             tabbedPage.Children.Add(new PicturesPage());
 
-            MainPage = tabbedPage;
+            MainPage = new ExercisesWikiPage();
         }
 
         protected override void OnStart()

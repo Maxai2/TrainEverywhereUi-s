@@ -20,15 +20,15 @@ namespace TrainEverywhere
 			InitializeComponent ();
             BindingContext = this;
 
-            BodyPic = new ObservableCollection<string>
-            {
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg"
-            };
+            //BodyPic = new ObservableCollection<string>
+            //{
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
+            //    "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg"
+            //};
         }
 	}
 }

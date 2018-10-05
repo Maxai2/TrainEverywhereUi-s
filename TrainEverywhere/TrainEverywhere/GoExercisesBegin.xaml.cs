@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace TrainEverywhere
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ExercisesWikiPage : ContentPage
+	public partial class GoExercisesBegin : ContentPage
 	{
-		public ExercisesWikiPage()
+		public GoExercisesBegin ()
 		{
 			InitializeComponent ();
-        }
-    }
+		}
+	}
 }

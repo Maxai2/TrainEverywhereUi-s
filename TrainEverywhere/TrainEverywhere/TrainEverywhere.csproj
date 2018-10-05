@@ -10,10 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="3.2.0.871581" />
-    <PackageReference Include="Xamarin.Forms.CarouselView" Version="2.3.0-pre2" />
-    <PackageReference Include="Xamarin.Forms.WrapLayout" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +51,9 @@
     <EmbeddedResource Update="ExercisesWikiPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="GoExercisesBegin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -60,6 +67,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="NewsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ProgramBuildPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ProgramSettings.xaml">
@@ -77,7 +87,13 @@
     <None Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="BodyPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="ExercisesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ExercisesWikiPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="LoginPage.xaml">
@@ -98,11 +114,26 @@
     <None Update="NewsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="Picturespage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ProgramSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="RegistrationPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="RegistrationPageNext.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Interface\" />
+    <Folder Include="View\" />
   </ItemGroup>
 </Project>

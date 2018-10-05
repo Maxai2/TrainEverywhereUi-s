@@ -5,15 +5,8 @@
              x:Class="TrainEverywhere.ExercisesWikiPage">
 	<ContentPage.Content>
 		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition/>
-			</Grid.RowDefinitions>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition/>
-			</Grid.ColumnDefinitions>
-
-			<Image Source="imgonline-com-ua-Resize-4CwvHLeOB0sCVXgu.jpg"/>
-
+			<Label Text="awdawd"/>
+			<Image Source="omg.jpg"/>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

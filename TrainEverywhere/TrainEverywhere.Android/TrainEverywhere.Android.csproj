@@ -104,7 +104,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\drawable\imgonline-com-ua-Resize-4CwvHLeOB0sCVXgu.jpg" />
+    <AndroidResource Include="Resources\drawable\omg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
