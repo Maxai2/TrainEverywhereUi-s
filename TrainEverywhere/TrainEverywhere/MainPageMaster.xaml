@@ -26,7 +26,7 @@
 							<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
 						</Frame.GestureRecognizers>
 
-						<ci:CircleImage Source="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg" Aspect="AspectFill"/>
+						<ci:CircleImage Source="https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg" Aspect="AspectFill"/>
 					</Frame>
 
 					<Label Margin="5" Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large"/>

@@ -12,10 +12,14 @@ namespace TrainEverywhere
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ProfilePage : ContentPage
 	{
-		public ProfilePage ()
+        public User user { get; set; }
+
+        public ProfilePage ()
 		{
 			InitializeComponent ();
-            //BindingContext = this;
+            BindingContext = this;
+
+            user = App.user;
         }
 	}
 }

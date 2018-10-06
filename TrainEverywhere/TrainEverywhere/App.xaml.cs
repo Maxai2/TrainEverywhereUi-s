@@ -12,10 +12,26 @@ namespace TrainEverywhere
 
         public static TabbedPage tabbedPage = new TabbedPage();
 
+        public static User user { get; set; } = new User();
+
         public App()
         {
             InitializeComponent();
 
+            user.Arms = 40;
+            user.Calves = 50;
+            user.Chest = 100;
+            user.DayOfBirth = new DateTime(1999, 02, 20);
+            user.UserEmail = "user@gmail.com";
+            user.UserName = "FirstName";
+            user.Gender = "Male";
+            user.Height = 180;
+            user.UserSurname = "LastName";
+            user.UserPassword = "qwerty";
+            user.Quads = 50;
+            user.Shoulders = 70;
+            user.Waist = 40;
+            user.Weight = 50;
 
             tabbedPage.Children.Add(new ProfilePage());
             tabbedPage.Children.Add(new BodyPage());
