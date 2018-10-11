@@ -6,13 +6,13 @@
 	<Grid>
 		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
 
-			<Label Text="TRAIN EVERYWHERE" HorizontalOptions="Center" FontSize="Large" Margin="0,0,0,20" FontAttributes="Bold"/>
+			<Label Text="Train Every Where" HorizontalOptions="Center" FontSize="Large" Margin="0,0,0,20" FontAttributes="Bold" FontFamily="Roboto Condensed" TextColor="#F2B134"/>
 
 			<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email"/>
 			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
 
-			<Button Margin="0,40,0,0" x:Name="SIButton" Text="Sign In" TextColor="White"/>
-			
+			<Button Margin="0,30,0,0" x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="#112F41"/>
+
 			<Grid>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="*"/>
@@ -25,11 +25,10 @@
 				<Label Grid.Column="2" VerticalOptions="Center" HeightRequest="1" BackgroundColor="Gray"/>
 			</Grid>
 
-			<Button Text="Sign Up" TextColor="White" Command="{Binding SignUpCom}"/>
+			<Button Text="Sign Up" TextColor="White" Command="{Binding SignUpCom}" BackgroundColor="#112F41"/>
 
 			<Button x:Name="lblForgotPas" Text="Forgot password?" HorizontalOptions="Center" BackgroundColor="Transparent" FontSize="Micro" Clicked="lblForgotPas_Clicked" TextColor="Blue"/>
 
 		</StackLayout>
 	</Grid>
-
 </ContentPage>

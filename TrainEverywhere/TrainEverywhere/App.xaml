@@ -5,7 +5,13 @@
 	<Application.Resources>
 		<ResourceDictionary>
 			<OnPlatform x:TypeArguments="x:String" x:Key="IndieFont">
-				<On Platform="Android" Value="IndieFlower.ttf#Indie Flower"/>
+				<On Platform="Android" Value="IndieFlower.ttf#IndieFlower"/>
+			</OnPlatform>
+			<OnPlatform x:TypeArguments="x:String" x:Key="SunshineFont">
+				<On Platform="Android" Value="Sunshine.ttf#Sunshine"/>
+			</OnPlatform>
+			<OnPlatform x:TypeArguments="x:String" x:Key="AmericaFont">
+				<On Platform="Android" Value="America.ttf#America"/>
 			</OnPlatform>
 		</ResourceDictionary>
 	</Application.Resources>
