@@ -13,6 +13,11 @@
 			<OnPlatform x:TypeArguments="x:String" x:Key="AmericaFont">
 				<On Platform="Android" Value="America.ttf#America"/>
 			</OnPlatform>
+
+			<Color x:Key="MainCol">#112F41</Color>
+			<Color x:Key="SecondCol">#F2B134</Color>
+			<Color x:Key="UnusualCol">#ED553B</Color>
+			
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

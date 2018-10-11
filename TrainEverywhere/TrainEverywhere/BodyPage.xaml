@@ -13,7 +13,7 @@
             <Entry Placeholder="Calves" Keyboard="Numeric" Text="{Binding UserBodyCalves}"/>
             <Entry Placeholder="Quads" Keyboard="Numeric" Text="{Binding UserBodyQuads}"/>
 
-									<Button Margin="0,15,0,0" HorizontalOptions="Center" Command="{Binding EditBody}" Text="Edit" HeightRequest="40" WidthRequest="150" BackgroundColor="Coral"/>
+			<Button Margin="0,15,0,0" HorizontalOptions="Center" Command="{Binding EditBody}" Text="Edit" HeightRequest="40" WidthRequest="150" BackgroundColor="{StaticResource SecondCol}" TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

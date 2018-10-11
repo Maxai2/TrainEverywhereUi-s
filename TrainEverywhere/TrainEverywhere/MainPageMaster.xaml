@@ -9,7 +9,7 @@
 		<ListView x:Name="MenuItemsListView" SeparatorVisibility="None" HasUnevenRows="true" ItemsSource="{Binding MenuItems}">
 
 			<ListView.Header>
-				<Grid BackgroundColor="#03A9F4">
+				<Grid BackgroundColor="#112F41">
 
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="*"/>
@@ -21,15 +21,16 @@
 						<RowDefinition Height="Auto"/>
 					</Grid.RowDefinitions>
 
-					<Frame Grid.RowSpan="2" Grid.Column="0" BackgroundColor="Transparent" HeightRequest="100" WidthRequest="100">
+					<Frame Grid.RowSpan="2" Grid.Column="0" BackgroundColor="Transparent" HeightRequest="50">
 						<Frame.GestureRecognizers>
-							<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+							<TapGestureRecognizer Command="{Binding}" Tapped="TapGestureRecognizer_Tapped"/>
 						</Frame.GestureRecognizers>
 
 						<ci:CircleImage Source="https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg" Aspect="AspectFill"/>
 					</Frame>
 
-					<Label Margin="5" Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large"/>
+					<Label Margin="5" Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large" TextColor="{StaticResource UnusualCol}"/>
+					<Label />
 				</Grid>
 			</ListView.Header>
 

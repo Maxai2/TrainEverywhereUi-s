@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrainEverywhere.NewsPage" Title="News">
 	<ContentPage.Content>
-		<ListView ItemsSource="{Binding News}" HasUnevenRows="True">
+		<ListView ItemsSource="{Binding News}" HasUnevenRows="True" SelectionMode="None">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
 						<Frame BorderColor="Black" CornerRadius="5" Margin="5" HeightRequest="150">
 							<Frame.GestureRecognizers>
-								<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+								<TapGestureRecognizer  Tapped="TapGestureRecognizer_Tapped"/> <!--Comman-->
 							</Frame.GestureRecognizers>
 							<Grid>
 
