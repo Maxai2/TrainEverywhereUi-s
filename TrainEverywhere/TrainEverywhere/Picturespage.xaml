@@ -4,16 +4,17 @@
              x:Class="TrainEverywhere.PicturesPage" Title="Pictures">
 	<ContentPage.Content>
 		<Grid>
-			<!--<Grid.RowDefinitions>
+			<Grid.RowDefinitions>
 				<RowDefinition/>
 				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
-			
-			<ScrollView Orientation="Vertical" Grid.Row="0" Grid.Column="0">
-				<xf:WrapLayout Orientation="Horizontal">
+
+			<ScrollView Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2">
+				<StackLayout Orientation="Horizontal">
 					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3" WidthRequest="150"/>
 					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3" WidthRequest="150"/>
 					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3" WidthRequest="150"/>
@@ -22,11 +23,11 @@
 					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3" WidthRequest="150"/>
 					<Image Source="https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg" Margin="3" WidthRequest="150"/>
 
-				</xf:WrapLayout>
+				</StackLayout>
 
 			</ScrollView>
 			
-			<Button Text="+" WidthRequest="40" HeightRequest="40" BorderRadius="20" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>-->
+			<Button Text="+" WidthRequest="40" HeightRequest="40" BorderRadius="20" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
 
 		</Grid>
 	</ContentPage.Content>

@@ -17,9 +17,11 @@ namespace TrainEverywhere
     {
         public ListView ListView;
 
+
         public MainPageMaster()
         {
             InitializeComponent();
+
 
             BindingContext = new MainPageMasterViewModel();
             ListView = MenuItemsListView;
@@ -28,15 +30,18 @@ namespace TrainEverywhere
         class MainPageMasterViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<MainPageMenuItem> MenuItems { get; set; }
+            public float Raiting { get; set; }
 
             public MainPageMasterViewModel()
             {
+                Raiting = 0;
+                
                 MenuItems = new ObservableCollection<MainPageMenuItem>(new[]
                 {
-                        new MainPageMenuItem { Id = 0, Title = "News page", TargetType = typeof(NewsPage)},
-                        new MainPageMenuItem { Id = 1, Title = "Exercises", TargetType = typeof(ExercisesWikiPage)},
-                        new MainPageMenuItem { Id = 2, Title = "My programs", TargetType = typeof(ProgramSettings) },
-                        new MainPageMenuItem { Id = 3, Title = "Basic", TargetType = typeof(NewsPage)}
+                    new MainPageMenuItem { Id = 0, Title = "News page", TargetType = typeof(NewsPage)},
+                    new MainPageMenuItem { Id = 1, Title = "Exercises", TargetType = typeof(ExercisesWikiPage)},
+                    new MainPageMenuItem { Id = 2, Title = "My programs", TargetType = typeof(ProgramSettings)},
+                    new MainPageMenuItem { Id = 3, Title = "Basic", TargetType = typeof(NewsPage)}
 
                     //new MainPageMenuItem { Id = 1, Title = "My profile", TargetType = typeof(MyProfilePage)},
                 });

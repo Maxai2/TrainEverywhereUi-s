@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TrainEverywhere.RegistrationPageNext">
 	<ContentPage.Content>
-		<StackLayout Spacing="10" VerticalOptions="Center" Padding="50">
+		<StackLayout Spacing="10" VerticalOptions="Center" Padding="45">
 			<Entry Placeholder="Height" Keyboard="Numeric"/>
 			<Entry Placeholder="Weight" Keyboard="Numeric"/>
 			<Entry Placeholder="Chest" Keyboard="Numeric"/>
