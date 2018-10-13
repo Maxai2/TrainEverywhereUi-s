@@ -4,7 +4,10 @@
              x:Class="TrainEverywhere.ProgramBuildPage">
 	<ContentPage.Content>
 		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
-			<Picker FontSize="Medium" HorizontalOptions="Center" WidthRequest="100">
+
+			<Image />
+
+			<Picker FontSize="Medium">
 				<Picker.Items>
 					<x:String>Monday</x:String>
 					<x:String>Tuesday</x:String>
@@ -16,7 +19,7 @@
 				</Picker.Items>
 			</Picker>
 
-			<Picker FontSize="Medium" HorizontalOptions="Center" WidthRequest="200">
+			<Picker FontSize="Medium">
 				<Picker.Items>
 					<x:String>Monday</x:String>
 					<x:String>Tuesday</x:String>

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -59,9 +59,42 @@ namespace TrainEverywhere
             #endregion
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        //private ICommand profileOpenCom;
+        //public ICommand ProfileOpenCom
+        //{
+        //    get
+        //    {
+        //        return profileOpenCom ?? (profileOpenCom = new Command(
+        //            execute: () =>
+        //            {
+        //                this.Navigation.PushModalAsync(App.tabbedPage);
+        //            }));
+        //    }
+        //}
+
+        private void ProfileOpenCom(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(App.tabbedPage);
         }
+
+
+        private void RaitingOpenCom(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new RaitingPage());
+        }
+
+        //private ICommand raitingOpenCom;
+        //public ICommand RaitingOpenCom
+        //{
+        //    get
+        //    {
+        //        return raitingOpenCom ?? (raitingOpenCom = new Command
+        //            (execute: () =>
+        //            {
+        //                this.Navigation.PushModalAsync(new RaitingPage());
+        //            }));
+        //    }
+        //}
+
     }
 }

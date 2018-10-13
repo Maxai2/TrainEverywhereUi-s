@@ -5,7 +5,49 @@
              x:Class="TrainEverywhere.ExercisesWikiPage">
 	<ContentPage.Content>
 		<Grid>
-			<Image Source="https://i.pinimg.com/originals/85/c0/fa/85c0fa1536c888e393a5b38c297c66ec.jpg"/>
+			<Grid.RowDefinitions>
+				<RowDefinition/> <!--1-->
+				<RowDefinition/>	<!--2-->
+				<RowDefinition/>	<!--3-->
+				<RowDefinition/>	<!--4-->
+				<RowDefinition/>	<!--5-->
+				<RowDefinition/>	<!--6-->
+				<RowDefinition/>	<!--7-->
+				<RowDefinition/>	<!--8-->
+				<RowDefinition/>	<!--9-->
+				<RowDefinition/>	<!--10-->
+				<RowDefinition/>	<!--11-->
+				<RowDefinition/>	<!--12-->
+				<RowDefinition/>	<!--13-->
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/> <!--1-->
+				<ColumnDefinition/>	<!--2-->
+				<ColumnDefinition/>	<!--3-->
+				<ColumnDefinition/>	<!--4-->
+				<ColumnDefinition/>	<!--5-->
+				<ColumnDefinition/>	<!--6-->
+				<ColumnDefinition/>	<!--7-->
+				<ColumnDefinition/>	<!--8-->
+				<ColumnDefinition/>	<!--9-->
+				<ColumnDefinition/>	<!--10-->
+				<ColumnDefinition/>	<!--11-->
+				<ColumnDefinition/>	<!--12-->
+			</Grid.ColumnDefinitions>
+			
+			<!--<Image Source="https://i.pinimg.com/originals/85/c0/fa/85c0fa1536c888e393a5b38c297c66ec.jpg"/>-->
+			<Image Source="HumanPic.jpg" Aspect="Fill" Grid.Row="0" Grid.Column="0" Grid.RowSpan="13" Grid.ColumnSpan="12"/>
+
+			<!--<Button/>
+			<Button/>
+			<Button/>
+			<Button/>
+			<Button/>
+			<Button/>
+			<Button/>
+			
+			<Button/>-->
+
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

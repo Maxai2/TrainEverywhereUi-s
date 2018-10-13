@@ -6,5 +6,6 @@ namespace TrainEverywhere.ModelView
 {
     class BodyPageViewModel
     {
+        
     }
 }

@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 													x:Class="TrainEverywhere.MainPageMaster" 
 													xmlns:ci="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
-													Title="Master">
+													Title="Master" x:Name="PageMaster">
 	<StackLayout>
 
 		<ListView x:Name="MenuItemsListView" SeparatorVisibility="None" HasUnevenRows="true" ItemsSource="{Binding MenuItems}">
 
 			<ListView.Header>
-				<Grid BackgroundColor="#112F41">
+				<Grid BackgroundColor="{StaticResource MainCol}">
 
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="*"/>
@@ -23,7 +23,7 @@
 
 					<Frame Grid.RowSpan="2" Grid.Column="0" BackgroundColor="Transparent" HeightRequest="50">
 						<Frame.GestureRecognizers>
-							<TapGestureRecognizer Command="{Binding}" Tapped="TapGestureRecognizer_Tapped"/>
+							<TapGestureRecognizer Tapped="ProfileOpenCom" Command="{Binding Source={x:Reference PageMaster}, Path=BindingContext.ProfileOpenCom}"/>
 						</Frame.GestureRecognizers>
 
 						<ci:CircleImage HeightRequest="150" WidthRequest="150" Source="https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg" Aspect="AspectFill"/>
@@ -31,7 +31,11 @@
 
 					<Label Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large" TextColor="{StaticResource UnusualCol}"/>
 
-					<StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1" >
+					<StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+						<StackLayout.GestureRecognizers>
+							<TapGestureRecognizer Tapped="RaitingOpenCom" Command="{Binding Source={x:Reference PageMaster}, Path=BindingContext.RaitingOpenCom}"/>
+						</StackLayout.GestureRecognizers>
+						
 						<Label Text="Raiting:" FontSize="Medium" TextColor="{StaticResource SecondCol}"/>
 						<Label Text="{Binding Raiting}" FontSize="Medium" TextColor="{StaticResource SecondCol}"/>
 					</StackLayout>
