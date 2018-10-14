@@ -4,14 +4,17 @@
              xmlns:local="clr-namespace:TrainEverywhere"
              x:Class="TrainEverywhere.LoginPage">
 	<Grid>
+		<!--<Image Source="https://pre00.deviantart.net/101f/th/pre/i/2015/105/8/6/commission___no_pain_no_gain_by_kingvego-d818yss.png" Aspect="Fill"/>-->
+		
 		<StackLayout Spacing="15" VerticalOptions="Center" Padding="20">
+
 
 			<Label Text="Train Every Where" HorizontalOptions="Center" FontSize="Large" Margin="0,0,0,20" FontAttributes="Bold" FontFamily="Roboto Condensed" TextColor="{StaticResource SecondCol}"/>
 
-			<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email"/>
-			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true"/>
+			<Entry x:Name="email" Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email" Text="{Binding SignInEmail}"/>
+			<Entry x:Name="password" Placeholder="Password" PlaceholderColor="LightGray" IsPassword="true" Text="{Binding SignInPassword}"/>
 
-			<Button Margin="0,30,0,0" x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="{StaticResource MainCol}"/>
+			<Button Margin="0,30,0,0" x:Name="SIButton" Text="Sign In" TextColor="White" BackgroundColor="{StaticResource MainCol}" Command="{Binding SignIn}"/>
 
 			<Grid>
 				<Grid.ColumnDefinitions>

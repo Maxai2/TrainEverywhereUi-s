@@ -37,9 +37,10 @@
 			
 			<!--<Image Source="https://i.pinimg.com/originals/85/c0/fa/85c0fa1536c888e393a5b38c297c66ec.jpg"/>-->
 			<Image Source="HumanPic.jpg" Aspect="Fill" Grid.Row="0" Grid.Column="0" Grid.RowSpan="13" Grid.ColumnSpan="12"/>
+			
+			<Button Grid.Column="5" Grid.Row="5" Command="{Binding ChectClick}"/>
 
 			<!--<Button/>
-			<Button/>
 			<Button/>
 			<Button/>
 			<Button/>

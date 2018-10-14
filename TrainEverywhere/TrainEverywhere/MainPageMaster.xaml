@@ -29,7 +29,7 @@
 						<ci:CircleImage HeightRequest="150" WidthRequest="150" Source="https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg" Aspect="AspectFill"/>
 					</Frame>
 
-					<Label Grid.Column="1" Grid.Row="0" Text="User name" FontSize="Large" TextColor="{StaticResource UnusualCol}"/>
+					<Label Grid.Column="1" Grid.Row="0" Text="{Binding user.FirstName}" FontSize="Large" TextColor="{StaticResource UnusualCol}"/>
 
 					<StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
 						<StackLayout.GestureRecognizers>

@@ -32,16 +32,16 @@
 						<x:String>Female</x:String>
 					</Picker.Items>
 				</Picker>
-				
-				<DatePicker Margin="5" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Date="{Binding UserBirthday}"/>
 
-				<Entry Margin="5" Placeholder="Email" Text="{Binding UserEmail}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Center"/>
+				<DatePicker Margin="5" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Date="{Binding SelectedUser.DayOfBirth}"/>
 
-				<Entry Margin="5" Placeholder="Name" Text="{Binding UserName}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
-				<Entry Margin="5" Placeholder="Surname" Text="{Binding UserSurname}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Email" Text="{Binding SelectedUser.Email}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Center"/>
 
-				<Entry Margin="5" Placeholder="Password" Text="{Binding UserPassword}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
-				<Entry Margin="5" Placeholder="Confirm Password" Text="{Binding UserConfirmPassword}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Name" Text="{Binding SelectedUser.FirstName}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Surname" Text="{Binding SelectedUser.LastName}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+				<Entry Margin="5" Placeholder="Password" Text="{Binding SelectedUser.Password}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+				<Entry Margin="5" Placeholder="Confirm Password" Text="{Binding SelectedUser.Password}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"/>
 
 				<Button Margin="0,5,0,0" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="6" HorizontalOptions="Center" Command="{Binding EditProfile}" Text="Edit" HeightRequest="40" WidthRequest="150" BackgroundColor="{StaticResource SecondCol}" TextColor="White"/>
 

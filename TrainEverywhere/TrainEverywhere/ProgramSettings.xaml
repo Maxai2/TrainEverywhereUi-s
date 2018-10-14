@@ -18,14 +18,14 @@
 
 			<StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Margin="5">
 				<Label Text="Program name:" HorizontalOptions="Center" VerticalOptions="Center"/>
-				<Picker FontSize="Medium" ItemsSource="{Binding ProgramNameList}" WidthRequest="250"/>
+				<Picker FontSize="Medium" ItemsSource="{Binding Source={x:Reference ProgSet}, Path=BindingContext.ProgramNameList}" ItemDisplayBinding="{Binding ProgramName}" WidthRequest="250" SelectedIndex="{Binding ProgramIndex}"/>
 			</StackLayout>
 
 			<StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Margin="5">
 
 				<Label Text="Weekday:" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-				<Picker FontSize="Medium" WidthRequest="250" VerticalOptions="CenterAndExpand">
+				<Picker FontSize="Medium" WidthRequest="250" VerticalOptions="CenterAndExpand" SelectedItem="{Binding WeekdayIndex}">
 					<Picker.Items>
 						<x:String>Monday</x:String>
 						<x:String>Tuesday</x:String>
@@ -35,30 +35,32 @@
 						<x:String>Saturday</x:String>
 						<x:String>Sunday</x:String>
 					</Picker.Items>
-					</Picker>
+				</Picker>
 			</StackLayout>
 
-			<ListView ItemsSource="{Binding Mock}" HasUnevenRows="True" SelectionMode="None" Grid.Row="2" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2">
+			<ListView ItemsSource="{Binding Source={x:Reference ProgSet}, Path=BindingContext.Exercises}" HasUnevenRows="True" SelectionMode="None" Grid.Row="2" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
 							<Frame OutlineColor="Black" Margin="2">
-								
+
 								<Grid>
 									<Grid.ColumnDefinitions>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
 										<ColumnDefinition/>
 									</Grid.ColumnDefinitions>
 									<Grid.RowDefinitions>
 										<RowDefinition Height="auto"/>
+										<RowDefinition Height="auto"/>
+										<RowDefinition Height="auto"/>
 									</Grid.RowDefinitions>
-									
-									<Label Grid.Column="0" Text="{Binding Title}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Start" LineBreakMode="WordWrap"/>
-									<Label Grid.Column="1" Text="{Binding Description}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Start" LineBreakMode="WordWrap"/>
-									<Button Grid.Column="2" Text="Edit" HorizontalOptions="End" VerticalOptions="Center" TextColor="white" BackgroundColor="{StaticResource SecondCol}" FontSize="Micro" HeightRequest="35" Command="{Binding Source={x:Reference ProgSet}, Path=BindingContext.ExerEditCom}"/>
-									<Button Grid.Column="3" Text="Delete" HorizontalOptions="End" VerticalOptions="Center" TextColor="white" BackgroundColor="{StaticResource SecondCol}" FontSize="Micro" HeightRequest="35" Command="{Binding Source={x:Reference ProgSet}, Path=BindingContext.ExerDeleteCom}" CommandParameter="{Binding .}"/>
+
+									<Label Grid.Row="0" Text="{Binding ExerciseName}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" LineBreakMode="WordWrap"/>
+									<Label Grid.Row="1" Text="{Binding ExerciseDescription}" FontSize="14" VerticalOptions="Center" HorizontalOptions="Start" LineBreakMode="WordWrap"/>
+
+									<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Grid.Row="2">
+										<Button Text="Edit" HorizontalOptions="End" VerticalOptions="Center" TextColor="white" BackgroundColor="{StaticResource SecondCol}" FontSize="Micro" HeightRequest="35" Command="{Binding Source={x:Reference ProgSet}, Path=BindingContext.ExerEditCom}"/>
+										<Button Text="Delete" HorizontalOptions="End" VerticalOptions="Center" TextColor="white" BackgroundColor="{StaticResource SecondCol}" FontSize="Micro" HeightRequest="35" Command="{Binding Source={x:Reference ProgSet}, Path=BindingContext.ExerDeleteCom}" CommandParameter="{Binding .}"/>
+									</StackLayout>
 
 								</Grid>
 							</Frame>
@@ -68,7 +70,7 @@
 			</ListView>
 
 			<Button Text="+" WidthRequest="40" HeightRequest="40" BorderRadius="20" Grid.Row="3" Grid.Column="1" Margin="10" BackgroundColor="{StaticResource MainCol}" TextColor="White" Command="{Binding AddNewExer}"/>
-			
+
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

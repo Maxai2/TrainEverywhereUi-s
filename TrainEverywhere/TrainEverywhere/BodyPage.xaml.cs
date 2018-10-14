@@ -12,9 +12,13 @@ namespace TrainEverywhere
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class BodyPage : ContentPage
 	{
-		public BodyPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public User SelectedUser { get; set; }
+
+        public BodyPage()
+        {
+            InitializeComponent();
+            SelectedUser = App.SelectedUser;
+            this.BindingContext = this;
+        }
+    }
 }

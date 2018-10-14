@@ -2,18 +2,91 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TrainEverywhere.BodyPage" Title="Body parameters">
-    <ContentPage.Content>
-        <StackLayout Spacing="10" VerticalOptions="Center" Padding="10,20">
-            <Entry Placeholder="Height" Keyboard="Numeric" Text="{Binding UserBodyHeight}"/>
-            <Entry Placeholder="Weight" Keyboard="Numeric" Text="{Binding UserBodyWeight}"/>
-            <Entry Placeholder="Chest" Keyboard="Numeric" Text="{Binding UserBodyChest}"/>
-            <Entry Placeholder="Arms" Keyboard="Numeric" Text="{Binding UserBodyArms}"/>
-            <Entry Placeholder="Shoulders" Keyboard="Numeric" Text="{Binding UserBodyShoulders}"/>
-            <Entry Placeholder="Waist" Keyboard="Numeric" Text="{Binding UserBodyWaist}"/>
-            <Entry Placeholder="Calves" Keyboard="Numeric" Text="{Binding UserBodyCalves}"/>
-            <Entry Placeholder="Quads" Keyboard="Numeric" Text="{Binding UserBodyQuads}"/>
+	<ContentPage.Content>
+		<StackLayout Spacing="10" VerticalOptions="Center" Padding="10,20">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+				
+				<Label FontSize="Large" Grid.Column="0" Text="Height:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Height}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Weight:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Weight}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Chest:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Chest}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Arms:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Arms}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Shoulders:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Shoulders}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Waist:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Waist}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Calves:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Calves}"/>
+			</Grid>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="3*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label FontSize="Large" Grid.Column="0" Text="Quads:" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Entry Grid.Column="1" Keyboard="Numeric" Text="{Binding SelectedUser.Quads}"/>
+			</Grid>
+
+
 
 			<Button Margin="0,15,0,0" HorizontalOptions="Center" Command="{Binding EditBody}" Text="Edit" HeightRequest="40" WidthRequest="150" BackgroundColor="{StaticResource SecondCol}" TextColor="White"/>
-        </StackLayout>
-    </ContentPage.Content>
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>

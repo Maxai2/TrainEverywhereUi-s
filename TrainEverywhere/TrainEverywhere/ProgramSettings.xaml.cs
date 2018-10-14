@@ -10,58 +10,55 @@ using Xamarin.Forms.Xaml;
 
 namespace TrainEverywhere
 {
-    public class prog
-    {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-    }
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProgramSettings : ContentPage
     {
-        public ObservableCollection<prog> Mock { get; set; } = new ObservableCollection<prog>();
-        public ObservableCollection<string> ProgramNameList { get; set; } = new ObservableCollection<string>();
+        public ObservableCollection<Program> ProgramNameList { get; set; }
+
+        private ObservableCollection<Exercise> exercises =new ObservableCollection<Exercise>();
+
+        public ObservableCollection<Exercise> Exercises
+        {
+            get { return exercises; }
+            set { exercises = value; }
+        }
+
+        private int programIndex;
+
+        public int ProgramIndex
+        {
+            get { return programIndex; }
+            set { programIndex = value; }
+        }
+
+        private string _weekDayindex;
+        public string WeekdayIndex
+        {
+            get { return _weekDayindex; }
+            set
+            {
+                _weekDayindex = value;
+                try
+                {
+                    Exercises.Clear();
+                    foreach (var item in ProgramNameList[programIndex].ExerciseList[_weekDayindex])
+                    {
+                        Exercises.Add(item);
+                    }
+                }
+                catch
+                {
+                    Exercises.Clear();
+                }
+            }
+        }
 
         public ProgramSettings()
         {
             InitializeComponent();
             BindingContext = this;
-
-            ProgramNameList.Add("Rauf");
-            ProgramNameList.Add("Azer");
-
-
-            Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "1"
-            });
-            Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "2"
-            }); Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "3"
-            }); Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "4"
-            });
-
-            Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "5"
-            });
-            Mock.Add(new prog
-            {
-                Description = "asdadasd",
-                Title = "6"
-            });
-
+            
+            ProgramNameList = App.MyProgram;
         }
 
         private ICommand exerDeleteCom;
@@ -77,7 +74,7 @@ namespace TrainEverywhere
                             var result = DisplayAlert("Alert", "Do u want to delete this exercise?", "Yes", "No");
 
                             if (await result)
-                                Mock.Remove(param as prog);
+                                Exercises.Remove(param as Exercise);
 
                         });
                 }

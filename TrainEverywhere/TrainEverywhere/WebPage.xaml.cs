@@ -10,15 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace TrainEverywhere
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProfilePage : ContentPage
+	public partial class WebPage : ContentPage
 	{
-        public User SelectedUser { get; set; }
+        public string Url { get; set; }
 
-        public ProfilePage()
-        {
-            InitializeComponent();
-            SelectedUser = App.SelectedUser;
+        public WebPage (string url)
+		{
+			InitializeComponent ();
             BindingContext = this;
-        }
-    }
+
+            Url = url;
+		}
+	}
 }

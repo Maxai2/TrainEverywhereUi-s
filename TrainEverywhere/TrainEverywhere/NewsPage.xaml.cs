@@ -33,20 +33,44 @@ namespace TrainEverywhere
 
             var news1 = new News
             {
-                Description = "Be an everyday beast with a complete pre - workout meal that hits your training macros and a killer shoulder workout to build size and mass.",
-                Image = "https://www.bodybuilding.com/images/2018/september/everyday-beast-salmon-burger-and-shoulder-workout-header-600x338.jpg",
-                Title = "Everyday Beast: Salmon Burger and Shoulder Workout"
+                Description = "Today's episode is a back and hamstring workout followed by a very special post-workout meal: delicious ribeye with low-carb, keto-friendly sides.",
+                Image = "https://www.bodybuilding.com/images/2018/october/everyday-besat-back-and-hamstring-workout-with-keto-ribeye-header-600x338.jpg",
+                Title = "Back and Hamstring Workout With Keto Ribeye"
             };
 
             var news2 = new News
             {
-                Description = "Want better shoulders? Signature team athletes Tanner Hobbs, Meg Squats, Rodney Razor, and Brian Casad reveal their favorite delt-building workout.",
-                Image = "https://www.bodybuilding.com/images/2018/august/4-workouts-that-are-insanely-effective-at-building-shoulders-header-600x338.jpg",
-                Title = "4 Workouts That Are Insanely Effective At Building Shoulders"
+                Description = "The hardest part of a bench press is raising the bar off your chest. Good leg drive helps you move the bar until your strong pressing muscles can take over. Put together a leg drive bench press and prepare to break some old PRs.",
+                Image = "https://www.bodybuilding.com/images/2018/october/is-leg-drive-important-for-a-good-bench-press-header-600x338.jpg",
+                Title = "Ask The Super Strong Guy: Is Leg Drive Important For A Good Bench Press?"
+            };
+
+            var news3 = new News
+            {
+                Description = "On the eve of her biggest comp of the year, the YouTube star and devotee of the heavy lifting life talks with us about prep, protein bars, and how good it feels to buckle down and say no to distraction.",
+                Image = "https://www.bodybuilding.com/images/2018/september/meg-squats-steps-up-to-the-platform-header-600x338.jpg",
+                Title = "Meg Squats Steps Up To The Platform"
+            };
+
+            var news4 = new News
+            {
+                Description = "Meet the most important aminos not currently on your radar! These are the siblings of branched-chain amino acids who don't make the headlines, but should definitely make their way into your supplement arsenal.",
+                Image = "https://www.bodybuilding.com/images/2018/october/what-lifters-need-to-know-about-essential-amino-acids-header-600x338.jpg",
+                Title = "What Lifters Need To Know About Essential Amino Acids"
+            };
+
+            var news5 = new News
+            {
+                Description = "\"Dietary protein\" just means the protein you get from eating whole foods like beef, fish, soy, legumes, and nuts. Find out why getting most of your protein from food is a smart way to go.",
+                Image = "https://www.bodybuilding.com/images/2018/september/benefits-of-dietary-protein-header-600x338.jpg",
+                Title = "What Are The Benefits Of Dietary Protein?"
             };
 
             News.Add(news1);
             News.Add(news2);
+            News.Add(news3);
+            News.Add(news4);
+            //News.Add(news5);
 
             //WebClient client = new WebClient();
 
